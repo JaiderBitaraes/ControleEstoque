@@ -1,40 +1,40 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use Response;
-use App\CategoryModel;
+use App\SituationModel;
 
-class CategoryController extends Controller
+class SituacaoController extends Controller
 {
-    public function __construct()
+   public function __construct()
     {
         // $this->middleware('auth');
     }
     public function create(){
         $data = Input::all();
-        CategoryModel::create($data);
+        SituationModel::create($data);
+
         return Response::json($data);
 
     }
     public function getAll(){
-
-        $data = CategoryModel::all();
+        $data = SituationModel::all();
         return Response::json($data);
-
     }
     public function getById($id){
-        $data = CategoryModel::find($id);
+        $data = SituationModel::find($id);
         return Response::json($data);
     }
     public function update($id){
         $data = Input::all();
-        $result = CategoryModel::where('id',$id) ->update($data);
-        return Response::json($data);
+        $result = SituationModel::where('id', $id)->update($data);
+        return Response::json($result);
     }
     public function delete($id){
-        $result = CategoryModel::where('id',$id) ->delete();
+        $result = SituationModel::where('id', $id)->delete();
         return Response::json($result);
     }
 }
