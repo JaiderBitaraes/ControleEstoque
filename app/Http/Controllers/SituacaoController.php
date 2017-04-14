@@ -20,4 +20,13 @@ class SituacaoController extends Controller
         return Response::json($data);
 
     }
+    public function getAll(){
+        $data = SituationModel::all();
+        return Response::json($data);
+    }
+    public function getById($id){
+        $data = SituationModel::find($id);
+        return Response::json($data);
+    }
+    
 }

@@ -27,3 +27,7 @@ Route::get('/api/category/get', 'CategoryController@get');
 Route::post('/api/stock/create', 'EstoqueController@create');
 
 Route::post('/api/situation/create', 'SituacaoController@create');
+
+Route::get('/api/situation/getAll','SituacaoController@getAll');
+
+Route::get('/api/situation/getById/{id}','SituacaoController@getById');
