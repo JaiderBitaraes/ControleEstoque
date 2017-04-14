@@ -25,3 +25,19 @@ Route::post('/api/category/create', 'CategoryController@create');
 Route::get('/api/category/get', 'CategoryController@get');
 
 // Route::post();
+
+
+
+Route::post('/api/products/create', 'ProductController@create');
+
+// Routes Unity Post
+
+Route::post ('/api/unity/create', 'UnityController@create');
+
+Route::post ('/api/unity/update', 'UnityController@update');
+
+// Routes Unity Get
+
+Route::get ('/api/unity/getAll', 'UnityController@getAll');
+
+Route::get ('/api/unity/getById/{id}', 'UnityController@getById');
