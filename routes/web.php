@@ -34,10 +34,14 @@ Route::post('/api/products/create', 'ProductController@create');
 
 Route::post ('/api/unity/create', 'UnityController@create');
 
-Route::post ('/api/unity/update', 'UnityController@update');
+
 
 // Routes Unity Get
 
 Route::get ('/api/unity/getAll', 'UnityController@getAll');
 
 Route::get ('/api/unity/getById/{id}', 'UnityController@getById');
+
+// Routes Unity Put
+
+Route::put ('/api/unity/update/{id}', 'UnityController@update');

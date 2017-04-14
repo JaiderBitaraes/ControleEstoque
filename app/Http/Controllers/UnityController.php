@@ -35,10 +35,10 @@ class UnityController extends Controller
         return Response::json($result);
     }
 
-    public function update()
+    public function update($id)
     {
-        $update = UnityModel::find(1);
-        $update->name = 'Alteração Realizada!';
-        $update->save;
+        $data = Input::all();
+        UnityModel::where('id', $id) -> update ($data);
+        return Response::json($data);
     }
 }
