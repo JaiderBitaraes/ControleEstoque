@@ -33,4 +33,8 @@ class SituacaoController extends Controller
         $result = SituationModel::where('id', $id)->update($data);
         return Response::json($result);
     }
+    public function delete($id){
+        $result = SituationModel::where('id', $id)->delete();
+        return Response::json($result);
+    }
 }

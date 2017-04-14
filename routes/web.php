@@ -33,3 +33,5 @@ Route::get('/api/situation/getAll','SituacaoController@getAll');
 Route::get('/api/situation/getById/{id}','SituacaoController@getById');
 
 Route::put('/api/situation/update/{id}','SituacaoController@update');
+
+Route::delete('/api/situation/delete/{id}','SituacaoCOntroller@delete');
