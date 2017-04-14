@@ -46,7 +46,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Situação</a></li>
+                        <li><a href="/situation">Situação</a></li>
                         <li><a href="#">Categoria</a></li>
                         <li><a href="/unity">Unidade</a></li>
                     </ul>
