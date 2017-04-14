@@ -1,20 +1,7 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 
 Auth::routes();
 
@@ -43,18 +30,13 @@ Route::put('/api/category/update/{id}','CategoryController@update');
 
 Route::delete('/api/category/delete/{id}','CategoryController@delete');
 
-<<<<<<< HEAD
 // Route::post();
-
-
 
 Route::post('/api/products/create', 'ProductController@create');
 
 // Routes Unity Post
 
 Route::post('/api/unity/create', 'UnityController@create');
-
-
 
 // Routes Unity Get
 
@@ -65,10 +47,7 @@ Route::get('/api/unity/getById/{id}', 'UnityController@getById');
 // Routes Unity Put
 
 Route::put('/api/unity/update/{id}', 'UnityController@update');
-
-
 // Routes Unity Delete
 
 Route::delete('/api/unity/delete/{id}', 'UnityController@delete');
-=======
->>>>>>> 0db1d4999b215ed1d31b3ea7ebc895934c37c248
+
