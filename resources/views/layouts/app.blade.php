@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,9 +19,12 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+        
+    <script src="{{ asset('js/AngularJs/Libs/angular.min.js') }}"></script>
+    <script src="{{ asset('js/AngularJs/Configs/app.js') }}"></script>
 </head>
-<body>
-    <div id="app">
+<body ng-app="ControleEstoqueApp">
+    <div>
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -43,7 +46,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li><a href="#">Situação</a></li>
+                        <li><a href="#">Categoria</a></li>
+                        <li><a href="#">Unidade</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
