@@ -14,6 +14,7 @@ Route::get('/api/category/getAll', 'CategoryController@getAll');
 
 Route::post('/api/stock/create', 'EstoqueController@create');
 
+// Route s Situacão;
 Route::post('/api/situation/create', 'SituacaoController@create');
 
 Route::get('/api/situation/getAll','SituacaoController@getAll');
@@ -29,6 +30,10 @@ Route::get('/api/category/getById/{id}','CategoryController@getById');
 Route::put('/api/category/update/{id}','CategoryController@update');
 
 Route::delete('/api/category/delete/{id}','CategoryController@delete');
+
+Route::get('/situation', function () {
+    return view('situation');
+});
 
 // Route::post();
 
@@ -51,7 +56,13 @@ Route::put('/api/unity/update/{id}', 'UnityController@update');
 
 Route::delete('/api/unity/delete/{id}', 'UnityController@delete');
 
+
 Route::get('/category', function () {
     return view('category');
+});
+
+
+Route::get('/unity', function () {
+    return view('unity');
 });
 
