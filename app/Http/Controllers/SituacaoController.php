@@ -28,5 +28,9 @@ class SituacaoController extends Controller
         $data = SituationModel::find($id);
         return Response::json($data);
     }
-    
+    public function update($id){
+        $data = Input::all();
+        $result = SituationModel::where('id', $id)->update($data);
+        return Response::json($result);
+    }
 }
