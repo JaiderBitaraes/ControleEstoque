@@ -51,3 +51,6 @@ Route::put('/api/unity/update/{id}', 'UnityController@update');
 
 Route::delete('/api/unity/delete/{id}', 'UnityController@delete');
 
+Route::get('/unity', function () {
+    return view('unity');
+});
