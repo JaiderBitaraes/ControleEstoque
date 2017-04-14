@@ -8,4 +8,11 @@ app.controller('situationCtrl',function($scope,situationFactory){
             console.log(res.data);
         });
     }
+    $scope.getAll = function(){
+         situationFactory
+        .getAll()
+        .then(function(res){
+            console.log(res.data);
+        });
+    }
 });
