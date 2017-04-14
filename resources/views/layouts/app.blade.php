@@ -47,7 +47,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li><a href="#">Situação</a></li>
-                        <li><a href="#">Categoria</a></li>
+                        <li><a href="/category">Categoria</a></li>
                         <li><a href="#">Unidade</a></li>
                     </ul>
 
