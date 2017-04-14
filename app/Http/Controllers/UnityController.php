@@ -41,4 +41,10 @@ class UnityController extends Controller
         UnityModel::where('id', $id) -> update ($data);
         return Response::json($data);
     }
+
+    public function delete ($id)
+    {
+        $result = UnityModel::where('id', $id) -> delete();
+        return Resposne::json($result);
+    }
 }

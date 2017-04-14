@@ -32,16 +32,21 @@ Route::post('/api/products/create', 'ProductController@create');
 
 // Routes Unity Post
 
-Route::post ('/api/unity/create', 'UnityController@create');
+Route::post('/api/unity/create', 'UnityController@create');
 
 
 
 // Routes Unity Get
 
-Route::get ('/api/unity/getAll', 'UnityController@getAll');
+Route::get('/api/unity/getAll', 'UnityController@getAll');
 
-Route::get ('/api/unity/getById/{id}', 'UnityController@getById');
+Route::get('/api/unity/getById/{id}', 'UnityController@getById');
 
 // Routes Unity Put
 
-Route::put ('/api/unity/update/{id}', 'UnityController@update');
+Route::put('/api/unity/update/{id}', 'UnityController@update');
+
+
+// Routes Unity Delete
+
+Route::delete('/api/unity/delete/{id}', 'UnityController@delete');
