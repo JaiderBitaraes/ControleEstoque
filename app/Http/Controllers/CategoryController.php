@@ -15,8 +15,8 @@ class CategoryController extends Controller
     public function create(){
        
         $data = Input::all();
-        CategoryModel::create($data);
-        return Response::json($data);
+        $result = CategoryModel::create($data);
+        return Response::json($result);
 
     }
     public function getAll(){
