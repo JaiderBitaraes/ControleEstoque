@@ -13,6 +13,7 @@ class CategoryController extends Controller
         // $this->middleware('auth');
     }
     public function create(){
+       
         $data = Input::all();
         CategoryModel::create($data);
         return Response::json($data);
