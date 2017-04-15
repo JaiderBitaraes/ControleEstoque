@@ -15,9 +15,9 @@ class SituacaoController extends Controller
     }
     public function create(){
         $data = Input::all();
-        SituationModel::create($data);
+        $result = SituationModel::create($data);
 
-        return Response::json($data);
+        return Response::json($result);
 
     }
     public function getAll(){
