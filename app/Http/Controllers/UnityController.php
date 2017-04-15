@@ -18,8 +18,9 @@ class UnityController extends Controller
     public function create()
     {
         $data = Input::all();
-        UnityModel::create($data);
-        return Response::json($data);
+        $result =  UnityModel::create($data);
+        return Response::json($result);
+
     }
 
     public function getAll()
@@ -38,13 +39,13 @@ class UnityController extends Controller
     public function update($id)
     {
         $data = Input::all();
-        UnityModel::where('id', $id) -> update ($data);
-        return Response::json($data);
+        $result = UnityModel::where('id', $id) -> update ($data);
+        return Response::json($result);
     }
 
     public function delete ($id)
     {
         $result = UnityModel::where('id', $id) -> delete();
-        return Resposne::json($result);
+        return Response::json($result);
     }
 }
